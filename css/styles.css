@@ -230,9 +230,53 @@ button {
     width: 70%;
 }
 
-.intro-text {
-    max-width: 150px;
+.intro-text-org{
+  perspective: 600px;
+}
+
+.intro-text{
+	max-width: 200px;
+    display: flex;
     text-align: center;
+    min-height: calc(22.8 + 1.2rem * 3);  /* 3 lineas de texto */
+    min-width: 100px;
+    transform-origin: top center;
+    align-items: center;
+}
+
+/* Sale girando */
+.salir{
+  animation: salir 0.3s forwards;
+}
+
+/* Entra girando */
+.entrar{
+  animation: entrar 0.3s forwards;
+}
+
+@keyframes salir{
+  0%{
+	opacity: 1;
+    transform: rotateX(0deg);
+  }
+  80%{
+	opacity: 1;
+  }
+  100%{
+	opacity: 0;
+	transform: rotateX(-90deg);
+  }
+}
+
+@keyframes entrar{
+  0%{
+    opacity:0;
+    transform: rotateX(90deg);
+  }
+  100%{
+    opacity:1;
+    transform: rotateX(0deg);
+  }
 }
 
 .intro-redes {
