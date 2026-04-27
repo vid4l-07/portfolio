@@ -229,56 +229,6 @@ button {
     justify-content: center;
     width: 70%;
 }
-
-.intro-text-org{
-  perspective: 600px;
-}
-
-.intro-text{
-	max-width: 200px;
-    display: flex;
-    text-align: center;
-    min-height: calc(1.65rem * 3);  /* 3 lineas de texto */
-    min-width: 100px;
-    transform-origin: top center;
-    align-items: center;
-}
-
-/* Sale girando */
-.salir{
-  animation: salir 0.3s forwards;
-}
-
-/* Entra girando */
-.entrar{
-  animation: entrar 0.3s forwards;
-}
-
-@keyframes salir{
-  0%{
-	opacity: 1;
-    transform: rotateY(0deg);
-  }
-  80%{
-	opacity: 1;
-  }
-  100%{
-	opacity: 0;
-	transform: rotateY(-90deg);
-  }
-}
-
-@keyframes entrar{
-  0%{
-    opacity:0;
-    transform: rotateY(90deg);
-  }
-  100%{
-    opacity:1;
-    transform: rotateY(0deg);
-  }
-}
-
 .intro-redes {
     display: flex;
     justify-content: center;
@@ -595,16 +545,14 @@ button {
 .contacto-bg {
     width: fit-content;
     border-radius: 10px;
-    /* border: solid 1px var(--light-txt); */
-    box-shadow: var(--box-shadow) 0px 0px 1px;
-    margin-top: 50px;
-    padding: 20px;
+    /* box-shadow: var(--box-shadow) 0px 0px 1px; */
+    margin: 40px;
 	transition: all ease 0.3s;
 }
 
-.contacto-bg:hover{
-    box-shadow: var(--box-shadow) 0px 0px 2px;
-}
+/* .contacto-bg:hover{ */
+/*     box-shadow: var(--box-shadow) 0px 0px 2px; */
+/* } */
 
 .contacto {
     display: grid;
@@ -617,15 +565,14 @@ button {
 }
 
 .boton-contacto {
-    display: flex;
+	display: flex;
     align-items: center;
     gap: 10px;
     color: var(--txt);
     text-decoration: none;
-    border-color: rgba(240, 248, 255, 0);
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
+    border-bottom: solid 1px var(--light-txt);
+    padding: 5px;
+    margin: 11px;
     transition: all 0.3s;
 }
 
