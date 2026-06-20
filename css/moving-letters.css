@@ -3,7 +3,7 @@
 }
 
 .intro-text{
-	max-width: 200px;
+	max-width: 220px;
     display: flex;
     text-align: center;
     min-height: calc(1.65rem * 3);  /* 3 lineas de texto */
