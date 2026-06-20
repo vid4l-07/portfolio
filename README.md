@@ -1,1 +1,1 @@
-https://vid4l-07.github.io/porfolio/
+https://vid4l-07.github.io/portfolio/
