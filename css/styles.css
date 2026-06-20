@@ -460,6 +460,22 @@ button {
     margin-bottom: 2px;
 }
 
+.proyecto-under {
+	display: flex;
+	justify-content: space-between;
+}
+
+.stars {
+	color: var(--light-txt);
+	display: flex;
+	align-items: center;
+	gap: 3px;
+}
+
+.star-number {
+	font-size: 16px;
+}
+
 .proyecto-len {
 	margin-top: 5px;
 }
