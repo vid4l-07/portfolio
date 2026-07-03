@@ -242,6 +242,13 @@ button {
 	font-size: 30px;
 }
 
+.boton-txt {
+    color: var(--primary);
+	transition: color 0.2s ease;
+}
+.boton-txt:hover {
+	color: var(--light-txt);
+}
 
 .boton {
     color: var(--txt);

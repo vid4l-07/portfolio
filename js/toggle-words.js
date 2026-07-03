@@ -1,4 +1,4 @@
-const frases = ["Computer Engineering student", "Linux & Low-Level Programming Enthusiast", "Interested in Cybersecurity"];
+const frases = ["Computer Engineering student", "Linux Environments Enthusiast", "Interested in Cybersecurity"];
 
 const texto = document.getElementById("intro-text");
 
