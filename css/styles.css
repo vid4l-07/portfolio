@@ -49,59 +49,59 @@ body.dark {
 }
 
 html {
-    font-size: 17px;
-    font-family: monospace;
-    scroll-behavior: smooth;
+	font-size: 17px;
+	font-family: monospace;
+	scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--bg2);
-    color: var(--txt);
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+	background-color: var(--bg2);
+	color: var(--txt);
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
 	transition: all 0.3s;
 }
 
 body::before {
-  content: "";
-  background: url("../img/noisy.webp");
-  position: fixed;
-  inset: 0;
-  opacity: 40%;
-  pointer-events: none;
-  z-index: -1;
+	content: "";
+	background: url("../img/noisy.webp");
+	position: fixed;
+	inset: 0;
+	opacity: 40%;
+	pointer-events: none;
+	z-index: -1;
 }
 
 .background {
-    width: 100vw;
-    overflow: hidden;
+	width: 100vw;
+	overflow: hidden;
 }
 
 .section {
-    width: 100%;
-    padding-top: 7%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	width: 100%;
+	padding-top: 7%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 h1 {
-    font-size: 3rem;
-    text-align: center;
+	font-size: 3rem;
+	text-align: center;
 }
 
 h2 {
-    font-size: 2.5rem;
-    margin: 20px 0;
-    text-align: center;
+	font-size: 2.5rem;
+	margin: 20px 0;
+	text-align: center;
 }
 
 
 button {
-    font-size: 17px;
-    font-family: monospace;
+	font-size: 17px;
+	font-family: monospace;
 }
 
 .grad-txt {
@@ -109,45 +109,45 @@ button {
 }
 
 .sec-txt {
-    text-align: center;
-    color: var(--light-txt);
+	text-align: center;
+	color: var(--light-txt);
 }
 
 .no-marg{
-    margin: 0;
+	margin: 0;
 }
 
 .flex {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .row {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .bar {
-    display: flex;
-    justify-content: center;
-    border-right: 1px solid;
-    border-color: var(--light-txt);
-    backdrop-filter: blur(5px);
-    font-size: 0.9rem;
-    position: fixed;
+	display: flex;
+	justify-content: center;
+	border-right: 1px solid;
+	border-color: var(--light-txt);
+	backdrop-filter: blur(5px);
+	font-size: 0.9rem;
+	position: fixed;
 	width: 3.5rem;
-    height: 100%;
-    z-index: 1;
+	height: 100%;
+	z-index: 1;
 }
 
 .bar-org {
-    display: flex;
+	display: flex;
 	flex-direction: column;
-    justify-items: center;
-    justify-content: space-between;
-    align-items: center;
+	justify-items: center;
+	justify-content: space-between;
+	align-items: center;
 	padding: 8px 0;
-    width: 95%;    
+	width: 95%;    
 }
 
 .boton-theme {
@@ -166,29 +166,29 @@ button {
 
 
 .icon-bar {
-    display: flex;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    width: fit-content;
-    padding: 15px;
-    background-color: none;
+	justify-content: space-between;
+	gap: 40px;
+	width: fit-content;
+	padding: 15px;
+	background-color: none;
 }
 
 .nav-icon {
-    margin-right: 15px;
+	margin-right: 15px;
 }
 
 .boton-menu {
-    display: none;
+	display: none;
 }
 
 .boton-bar {
-    text-decoration: none;
-    color: var(--txt);
-    transition: color 0.3s;
-    position: relative;
+	text-decoration: none;
+	color: var(--txt);
+	transition: color 0.3s;
+	position: relative;
 }
 
 .boton-bar::after { 
@@ -209,41 +209,41 @@ button {
 }
 
 .boton-bar.activo:after {
-  transform: scaleX(1);
+	transform: scaleX(1);
 }
 
 .boton-activo {
-    color: var(--txt);
+	color: var(--txt);
 }
 
 .intro-grid {
-    display: grid;
-    justify-items: center;
-    height: 100vh;
+	display: grid;
+	justify-items: center;
+	height: 100vh;
 }
 
 .intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 70%;
 }
 .intro-redes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .redes-bot {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	font-size: 30px;
 }
 
 .boton-txt {
-    color: var(--primary);
+	color: var(--primary);
 	transition: color 0.2s ease;
 }
 .boton-txt:hover {
@@ -251,35 +251,35 @@ button {
 }
 
 .boton {
-    color: var(--txt);
-    text-decoration: none;
-    border-color: rgba(240, 248, 255, 0);
-    padding: 10px;
-    margin: 10px;
-    border-radius: 7px;
-    transition: all 0.3s;
+	color: var(--txt);
+	text-decoration: none;
+	border-color: rgba(240, 248, 255, 0);
+	padding: 10px;
+	margin: 10px;
+	border-radius: 7px;
+	transition: all 0.3s;
 }
 
 .boton:hover {
 	color: var(--light-txt);
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .boton-cv {
-    color: var(--light-txt);
-    text-decoration: none;
-    /* border: solid 1px var(--light-txt); */
-    padding: 10px;
-    margin: 3px;
-    border-radius: 7px;
+	color: var(--light-txt);
+	text-decoration: none;
+	/* border: solid 1px var(--light-txt); */
+	padding: 10px;
+	margin: 3px;
+	border-radius: 7px;
 	box-shadow: var(--box-shadow) 0px 0px 1px;
-    transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 .boton-cv:hover {
 	color: var(--txt);
 	box-shadow: var(--box-shadow) 0px 0px 2px;
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .about-txt{
@@ -288,24 +288,24 @@ button {
 }
 
 .estudios-org {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 18px;
-    margin-top: 40px;
-    width: 60%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 18px;
+	margin-top: 40px;
+	width: 60%;
 }
 
 .estudio {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    padding: 10px 20px;
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	padding: 10px 20px;
 	/* box-shadow: var(--box-shadow) 0px 0px 1px; */
 	/* border-radius: 7px; */
-    border-bottom: solid 1px var(--light-txt);
-    transition: all 0.3s;
-    width: 100%;
+	border-bottom: solid 1px var(--light-txt);
+	transition: all 0.3s;
+	width: 100%;
 }
 
 
@@ -327,7 +327,7 @@ button {
 }
 
 .estudio:hover {
-    box-shadow: var(--box-shadow) 0px 0px 2px;
+	box-shadow: var(--box-shadow) 0px 0px 2px;
 	transform: translateX(5px);
 }
 
@@ -341,25 +341,25 @@ button {
 }
 
 .cert {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
 	margin-top: 10px;
 }
 
 .cert-bot {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: var(--txt);
-    transition: color 0.3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: var(--txt);
+	transition: color 0.3s;
 }
 
 .cert-bot:hover {
-    color: var(--light-txt);
-    cursor: pointer;
+	color: var(--light-txt);
+	cursor: pointer;
 }
 
 .skills-divs{
@@ -367,77 +367,77 @@ button {
 }
 
 .skills-org {
-    max-width: 40%;
+	max-width: 40%;
 }
 
 .skills-bot-org {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10%;
-    margin-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10%;
+	margin-top: 50px;
 }
 
 .skills-bot {
-    background-color: transparent;
-    color: var(--light-txt);
+	background-color: transparent;
+	color: var(--light-txt);
 	border: none;
-    border-radius: 7px;
-    box-shadow: var(--box-shadow) 0px 0px 1px;
-    padding: 10px;
-    transition: box-shadow 0.3s, transform 0.1s;
+	border-radius: 7px;
+	box-shadow: var(--box-shadow) 0px 0px 1px;
+	padding: 10px;
+	transition: box-shadow 0.3s, transform 0.1s;
 }
 
 .skills-bot:hover{
-    cursor: pointer;
+	cursor: pointer;
 	transform: scale(1.05);
-    box-shadow: var(--box-shadow) 0px 0px 2px;
+	box-shadow: var(--box-shadow) 0px 0px 2px;
 }
 
 .btn-active {
-    color: var(--txt);
+	color: var(--txt);
 }
 
 .skill-grp {
-    display: grid;
+	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(90px, auto));
-    justify-content: center;
-    align-items: center;
+	justify-content: center;
+	align-items: center;
 	row-gap: 20px;
-    margin-top: 50px;
-    transition: all 0.3s;
-    opacity: 1;
+	margin-top: 50px;
+	transition: all 0.3s;
+	opacity: 1;
 }
 
 
 .oculto {
-    max-height: 0;
-    opacity: 0;
-    margin: 0;
-    transform: translateY(10rem);
+	max-height: 0;
+	opacity: 0;
+	margin: 0;
+	transform: translateY(10rem);
 }
 
 .proyectos-org {
-    display: grid;
-    justify-content: center;
-    grid: auto / 220px 220px 220px;
-    gap: 60px;
-    margin-top: 40px;
-    width: fit-content;
+	display: grid;
+	justify-content: center;
+	grid: auto / 220px 220px 220px;
+	gap: 60px;
+	margin-top: 40px;
+	width: fit-content;
 }
 
 .proyecto {
-    display: grid;
-    align-items: center;
-    /* border: solid 1px var(--light-txt); */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: var(--box-shadow) 0px 0px 1px;
-    transition: all 0.3s;
+	display: grid;
+	align-items: center;
+	/* border: solid 1px var(--light-txt); */
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: var(--box-shadow) 0px 0px 1px;
+	transition: all 0.3s;
 }
 
 .proyecto:hover {
-    box-shadow: var(--box-shadow) 0px 0px 2px;
+	box-shadow: var(--box-shadow) 0px 0px 2px;
 	transform: translateY(-20px)
 }
 
@@ -463,9 +463,9 @@ button {
 }
 
 .under-txt {
-    border-bottom: solid 2px var(--primary);
-    width: fit-content;
-    margin-bottom: 2px;
+	border-bottom: solid 2px var(--primary);
+	width: fit-content;
+	margin-bottom: 2px;
 }
 
 .proyecto-under {
@@ -489,92 +489,92 @@ button {
 }
 
 .proyecto-icon-org {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    z-index: 1;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	z-index: 1;
 }
 
 .proyecto-icon {
-    width: 20px;
-    height: 20px;
-    display: block;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
-    color: var(--light-txt);
+	width: 20px;
+	height: 20px;
+	display: block;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	color: var(--light-txt);
 }
 
 .proyecto-hacking {
-    background-image: url(../img/security.png);
+	background-image: url(../img/security.png);
 }
 .proyecto-wifi {
-    background-image: url(../img/wifi.png);
+	background-image: url(../img/wifi.png);
 }
 .proyecto-bash {
-    background-image: url(../img/bash.png);
+	background-image: url(../img/bash.png);
 }
 .proyecto-linux {
-    background-image: url(../img/linux.png);
+	background-image: url(../img/linux.png);
 }
 .proyecto-windows {
-    background-image: url(../img/widows.svg);
+	background-image: url(../img/widows.svg);
 }
 .proyecto-wifi {
-    background-image: url(../img/wifi.png);
+	background-image: url(../img/wifi.png);
 } 
 
 .proyecto-icon-txt {
-    color: var(--txt);
-    position: absolute;
-    bottom: 105%;        /*lo coloca encima del icono */
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 5px;
-    border-radius: 8px;
-    border: none;
-    white-space: nowrap;
-    text-align: center;
+	color: var(--txt);
+	position: absolute;
+	transform: translateX(-50%);
+	bottom: 105%; 
+	left: 50%;
+	padding: 5px;
+	border-radius: 8px;
+	border: none;
+	/* white-space: nowrap; */
+	text-align: center;
 
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.7s;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.7s;
 
 	backdrop-filter: blur(5px); 
 }
 
 .proyecto-icon-org:hover .proyecto-icon-txt {
-    opacity: 1;
-    visibility: visible;
+	opacity: 1;
+	visibility: visible;
 }
 
 .border-top {
-    border-top: solid 1px var(--light-txt);
-    margin-top: 10px;
+	border-top: solid 1px var(--light-txt);
+	margin-top: 10px;
 }
 
 .proyecto-bot {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    width: fit-content;
-    text-decoration: none;
-    color: var(--txt);
-    transition: color 0.3s;
-    margin-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	width: fit-content;
+	text-decoration: none;
+	color: var(--txt);
+	transition: color 0.3s;
+	margin-top: 10px;
 }
 
 .proyecto-bot:hover{
-    color: var(--light-txt);
-    cursor: pointer;
+	color: var(--light-txt);
+	cursor: pointer;
 }
 
 .contacto-bg {
-    width: fit-content;
-    border-radius: 10px;
-    /* box-shadow: var(--box-shadow) 0px 0px 1px; */
-    margin: 40px;
+	width: fit-content;
+	border-radius: 10px;
+	/* box-shadow: var(--box-shadow) 0px 0px 1px; */
+	margin: 40px;
 	transition: all ease 0.3s;
 }
 
@@ -583,25 +583,25 @@ button {
 /* } */
 
 .contacto {
-    display: grid;
-    justify-content: center;
+	display: grid;
+	justify-content: center;
 }
 
 .icon-contact {
-    width: 24px;
-    height: 24px;
+	width: 24px;
+	height: 24px;
 }
 
 .boton-contacto {
 	display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--txt);
-    text-decoration: none;
-    border-bottom: solid 1px var(--light-txt);
-    padding: 5px;
-    margin: 11px;
-    transition: all 0.3s;
+	align-items: center;
+	gap: 10px;
+	color: var(--txt);
+	text-decoration: none;
+	border-bottom: solid 1px var(--light-txt);
+	padding: 5px;
+	margin: 11px;
+	transition: all 0.3s;
 }
 
 .boton-contacto:hover {
@@ -609,17 +609,17 @@ button {
 }
 
 .contacto-bg:hover .boton-contacto {
-    color: var(--light-txt);
+	color: var(--light-txt);
 }
 
 .contacto-bg .boton-contacto:hover {
-    cursor: pointer;
-    color: var(--txt);
+	cursor: pointer;
+	color: var(--txt);
 }
 
 .footer {
-    border-top: solid 1px var(--light-txt);
-    padding: 15px 0;
-    margin-top: 60px;
+	border-top: solid 1px var(--light-txt);
+	padding: 15px 0;
+	margin-top: 60px;
 }
 
