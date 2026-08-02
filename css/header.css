@@ -1,0 +1,146 @@
+/* --- HEADER --- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  transition: background var(--duration-fast), border var(--duration-fast);
+}
+
+.header.scrolled {
+  background: rgba(10, 10, 10, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 2px solid var(--border);
+}
+
+.light .header.scrolled {
+  background: rgba(240, 240, 240, 0.9);
+}
+
+.header-inner {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  transition: color var(--duration-fast);
+}
+
+.logo:hover {
+  color: var(--accent);
+}
+
+/* --- NAV --- */
+.nav-desktop {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* On mobile only the blog and theme icons remain visible */
+@media (max-width: 767px) {
+  .nav-links,
+  .nav-separator {
+    display: none;
+  }
+}
+
+.nav-link {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--muted);
+  transition: color var(--duration-fast), transform var(--duration-fast);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--fg);
+}
+
+.nav-link:active {
+	transform: scale(1.03);
+}
+
+.nav-separator {
+  width: 1px;
+  height: 1.25rem;
+  background: var(--muted);
+  opacity: 0.4;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-blog-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.375rem;
+  color: var(--muted);
+  transition: color var(--duration-fast), transform var(--duration-fast);
+}
+
+.nav-blog-btn:hover {
+  color: var(--primary);
+}
+
+/* Borde */
+.nav-blog-btn:hover svg rect {
+    stroke-dasharray: 80;
+    animation: draw-border .5s ease forwards;
+}
+
+/* Líneas */
+.nav-blog-btn:hover svg path:nth-of-type(5) {
+    stroke-dasharray: 8;
+    animation: draw-line .3s ease .15s forwards;
+}
+
+.nav-blog-btn:hover svg path:nth-of-type(6) {
+    stroke-dasharray: 8;
+    animation: draw-line .3s ease .22s forwards;
+}
+
+.nav-blog-btn:hover svg path:nth-of-type(7) {
+    stroke-dasharray: 8;
+    animation: draw-line .3s ease .31s forwards;
+}
+
+.theme-btn {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--duration-fast), transform var(--duration-fast);
+}
+
+.theme-btn:hover {
+  color: var(--primary);
+  animation: rotate var(--duration-slow);
+}
+.theme-btn:active {
+	transform: scale(1.2);
+}
