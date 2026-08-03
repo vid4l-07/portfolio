@@ -38,6 +38,16 @@
   margin-top: 0;
 }
 
+.projects-grid:has(.project-card:hover) .project-card {
+	opacity: 0.6;
+	transform: scale(.99);
+}
+
+.projects-grid:has(.project-card:hover) .project-card:hover {
+    opacity: 1;
+	transform: scale(1);
+}
+
 @media (min-width: 768px) {
   .project-card.offset {
     margin-top: 3rem;
