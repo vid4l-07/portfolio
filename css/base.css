@@ -40,6 +40,20 @@
   --yellow: #c8a27f;
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--muted);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
