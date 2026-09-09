@@ -1,9 +1,7 @@
 // --- TYPEWRITER ---
 (function() {
   var words = [
-    'Computer Engineering student',
-    'Linux Environments Enthusiast',
-    'Interested in Cybersecurity'
+	  'Offensive Security', 'Linux Environments', 'Low-Level Development', 'Security Tooling'
   ];
   var wordIndex = 0;
   var charIndex = 0;

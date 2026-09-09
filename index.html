@@ -165,7 +165,10 @@
       <div class="about-grid">
         <div>
           <p class="about-bio reveal">
-            I am a Computer Engineering student passionate about low-level programming, pentesting and Linux environments. I enjoy understanding how technology works under the hood. My main interests include software development and cybersecurity.
+            I am a Computer Engineering student focused on offensive security, Linux and low-level programming. I enjoy understanding how systems work under the hood, building security tools and investigating how software and networks behave.
+			</p>
+          <p class="about-bio reveal" style="margin-top: 1rem;">
+			I'm particularly interested in web and network penetration testing, security tooling and systems programming. I spend my time working on personal projects, practicing in cybersecurity labs and documenting what I learn through technical writeups.
           </p>
           <a href="https://vid4l-07.github.io/Brain-DB/" target="_blank" rel="noopener noreferrer" class="about-link reveal reveal-delay-1">
             Check my knowledge
@@ -186,10 +189,10 @@
               <span class="terminal-label">role:</span> CS student
             </div>
             <div class="terminal-line">
-              <span class="terminal-label">interests:</span> low-level, linux, pentesting 
+              <span class="terminal-label">interests:</span> pentesting, linux, low-level
             </div>
             <div class="terminal-line">
-              <span class="terminal-label">shell:</span> /bin/bash
+              <span class="terminal-label">languajes:</span> C++, Rust, Python, Bash 
             </div>
           </div>
         </div>
@@ -212,6 +215,39 @@
         <p class="section-subtitle">ls -la</p>
       </div>
       <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card reveal">
+          <div class="project-title-row">
+            <h3 class="project-title">Roxy</h3>
+          </div>
+          <div class="project-under">
+            <div class="project-tags">
+              <span class="tag">Rust</span>
+              <span class="tag">HTTP</span>
+              <span class="tag">Proxy</span>
+            </div>
+            <!-- <div class="stars" id="roxy-stars-org"> -->
+            <!--   <svg width="16" height="16"><use href="#star"></use></svg> -->
+            <!--   <span id="roxy-stars" class="star-number"></span> -->
+            <!-- </div> -->
+          </div>
+          <p class="project-desc">High-performance HTTP proxy and repeater built from scratch in Rust for traffic interception, analysis, and security testing.</p>
+          <div class="project-source-wrap">
+            <a href="https://github.com/vid4l-07/Roxy" target="_blank" rel="noopener noreferrer" class="project-source" aria-label="Klip repository">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                <path d="M9 18c-4.51 2-5-2-7-2"/>
+              </svg>
+              Source
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                <polyline points="15 3 21 3 21 9"/>
+                <line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
         <div class="project-card reveal">
           <div class="project-title-row">
             <h3 class="project-title">Klip</h3>
@@ -381,48 +417,12 @@
           <div class="skill-items">
             <span class="skill-item">C++</span>
             <span class="skill-item">Python</span>
+			<span class="skill-item">Rust</span>
             <span class="skill-item">Bash</span>
           </div>
         </div>
 
         <div class="skill-group reveal reveal-delay-1">
-          <div class="skill-group-header">
-            <div class="skill-group-dot"></div>
-            <h3 class="skill-group-title">Linux</h3>
-          </div>
-          <div class="skill-items">
-            <span class="skill-item">System Administration</span>
-            <span class="skill-item">Shell Scripting</span>
-			<span class="skill-item">System Hardening</span>
-          </div>
-        </div>
-
-        <div class="skill-group reveal reveal-delay-2">
-          <div class="skill-group-header">
-            <div class="skill-group-dot"></div>
-            <h3 class="skill-group-title">Cybersecurity</h3>
-          </div>
-          <div class="skill-items">
-            <span class="skill-item">Web Security</span>
-            <span class="skill-item">Network Pentesting</span>
-            <span class="skill-item">Wi-Fi Security</span>
-          </div>
-        </div>
-
-        <div class="skill-group reveal reveal-delay-3">
-          <div class="skill-group-header">
-            <div class="skill-group-dot"></div>
-            <h3 class="skill-group-title">Tools</h3>
-          </div>
-          <div class="skill-items">
-			<span class="skill-item">Kali Linux</span>
-            <span class="skill-item">Burp Suite</span>
-            <span class="skill-item">Nmap</span>
-            <span class="skill-item">ffuf</span>
-          </div>
-        </div>
-
-        <div class="skill-group reveal reveal-delay-4">
           <div class="skill-group-header">
             <div class="skill-group-dot"></div>
             <h3 class="skill-group-title">Networking</h3>
@@ -434,6 +434,45 @@
             <span class="skill-item">Wi-Fi</span>
           </div>
         </div>
+
+
+        <div class="skill-group reveal reveal-delay-2">
+          <div class="skill-group-header">
+            <div class="skill-group-dot"></div>
+            <h3 class="skill-group-title">Secutiry Tools</h3>
+          </div>
+          <div class="skill-items">
+			<span class="skill-item">Kali Linux</span>
+            <span class="skill-item">Burp Suite</span>
+            <span class="skill-item">Nmap</span>
+            <span class="skill-item">ffuf</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay-3">
+          <div class="skill-group-header">
+            <div class="skill-group-dot"></div>
+            <h3 class="skill-group-title">Linux</h3>
+          </div>
+          <div class="skill-items">
+            <span class="skill-item">System Administration</span>
+            <span class="skill-item">Shell Scripting</span>
+			<span class="skill-item">System Hardening</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay-4">
+          <div class="skill-group-header">
+            <div class="skill-group-dot"></div>
+            <h3 class="skill-group-title">Cybersecurity</h3>
+          </div>
+          <div class="skill-items">
+            <span class="skill-item">Web Security</span>
+            <span class="skill-item">Network Pentesting</span>
+            <span class="skill-item">Wi-Fi Security</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
