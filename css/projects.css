@@ -21,7 +21,7 @@
   background: var(--surface);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform var(--duration-slow) ease-out;
+  transition: transform 300ms ease-out;
 }
 
 .project-row:hover::before {
