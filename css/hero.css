@@ -79,7 +79,7 @@
 
 .social-icon-link {
   padding: 0.75rem;
-  border: 2px solid var(--border);
+  border: var(--border-width) solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,7 +102,7 @@
   gap: 0.625rem;
   margin-top: 2rem;
   padding: 0.75rem 1.5rem;
-  border: 2px solid var(--accent);
+  border: var(--border-width) solid var(--accent);
   background: transparent;
   color: var(--accent);
   font-family: var(--font-mono);

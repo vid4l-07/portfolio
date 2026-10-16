@@ -30,7 +30,7 @@
   font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  border-bottom: 2px solid var(--border);
+  border-bottom: var(--border-width) solid var(--border);
   padding-bottom: 0.25rem;
   transition: border-color var(--duration-fast);
 }
@@ -48,7 +48,7 @@
 }
 
 .terminal-card {
-  border: 2px solid var(--border);
+  border: var(--border-width) solid var(--border);
   padding: 1.5rem;
   background: var(--surface);
 }
@@ -99,7 +99,7 @@
 }
 
 .skill-group {
-  border: 2px solid var(--border);
+  border: var(--border-width) solid var(--border);
   padding: 1.5rem;
   background: var(--surface);
 }
@@ -255,7 +255,7 @@
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  border-bottom: 2px solid var(--border);
+  border-bottom: var(--border-width) solid var(--border);
   padding-bottom: 0.125rem;
   transition: border-color var(--duration-fast);
 }
@@ -279,7 +279,7 @@
   align-items: center;
   gap: 1rem;
   padding: 0.8rem 0;
-  border-bottom: 1px solid var(--muted);
+  border-bottom: var(--border-width) solid var(--muted);
   transition: border-color var(--duration-fast), transform var(--duration-fast);
 }
 

@@ -53,7 +53,7 @@
 .term-dots span {
   width: 10px;
   height: 10px;
-  border: var(--border-width) solid var(--border);
+  border: 2px solid var(--border);
   border-radius: 50%;
 }
 

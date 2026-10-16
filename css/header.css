@@ -12,7 +12,7 @@
   background: rgba(10, 10, 10, 0.9);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 2px solid var(--border);
+  border-bottom: var(--border-width) solid var(--border);
 }
 
 .light .header.scrolled {
