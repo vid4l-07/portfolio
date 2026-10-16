@@ -112,14 +112,11 @@
 .project-source:hover {
   color: var(--accent);
   border-color: var(--accent);
+  animation: hor-bounce-stay var(--duration-slow) ease-out;
 }
 
 .project-arrow {
   transition: translate var(--duration-fast) ease-out;
-}
-
-.project-source:hover .project-arrow {
-  translate: 3px -3px;
 }
 
 /* --- Estrellas de GitHub --- */
