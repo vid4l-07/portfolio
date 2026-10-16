@@ -222,182 +222,166 @@
         <h2 class="section-title">Projects</h2>
         <p class="section-subtitle">ls -la</p>
       </div>
-      <div class="projects-grid" id="projectsGrid">
+      <div class="project-list">
 
-        <div class="project-card reveal">
-          <div class="project-title-row">
-            <h3 class="project-title">Roxy</h3>
-          </div>
-          <div class="project-under">
-            <div class="project-tags">
-              <span class="tag">Rust</span>
-              <span class="tag">HTTP</span>
-              <span class="tag">Proxy</span>
+        <article class="project-row reveal">
+          <div class="project-body">
+            <div class="project-head">
+              <h3 class="project-title">Roxy</h3>
+              <div class="project-tags">
+                <span class="tag">Rust</span>
+                <span class="tag">HTTP</span>
+                <span class="tag">Proxy</span>
+              </div>
             </div>
-            <!-- <div class="stars" id="roxy-stars-org"> -->
-            <!--   <svg width="16" height="16"><use href="#star"></use></svg> -->
-            <!--   <span id="roxy-stars" class="star-number"></span> -->
-            <!-- </div> -->
+            <p class="project-desc">High-performance HTTP proxy and repeater built from scratch in Rust for traffic interception, analysis, and security testing.</p>
           </div>
-          <p class="project-desc">High-performance HTTP proxy and repeater built from scratch in Rust for traffic interception, analysis, and security testing.</p>
-          <div class="project-source-wrap">
-            <a href="https://github.com/vid4l-07/Roxy" target="_blank" rel="noopener noreferrer" class="project-source" aria-label="Klip repository">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
-                <path d="M9 18c-4.51 2-5-2-7-2"/>
-              </svg>
-              Source
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                <polyline points="15 3 21 3 21 9"/>
-                <line x1="10" y1="14" x2="21" y2="3"/>
-              </svg>
-            </a>
-          </div>
-        </div>
+          <a href="https://github.com/vid4l-07/Roxy" target="_blank" rel="noopener noreferrer" class="project-source" aria-label="Roxy repository">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+              <path d="M9 18c-4.51 2-5-2-7-2"/>
+            </svg>
+            <span>Source</span>
+            <svg class="project-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </article>
 
-        <div class="project-card reveal">
-          <div class="project-title-row">
-            <h3 class="project-title">Klip</h3>
-          </div>
-          <div class="project-under">
-            <div class="project-tags">
-              <span class="tag">C++</span>
-              <span class="tag">Cryptography</span>
-              <span class="tag">Tui</span>
+        <article class="project-row reveal">
+          <div class="project-body">
+            <div class="project-head">
+              <h3 class="project-title">Klip</h3>
+              <div class="project-tags">
+                <span class="tag">C++</span>
+                <span class="tag">Cryptography</span>
+                <span class="tag">Tui</span>
+                <span class="stars" id="klip-stars-org">
+                  <svg width="14" height="14"><use href="#star"></use></svg>
+                  <span id="klip-stars" class="star-number"></span>
+                </span>
+              </div>
             </div>
-            <div class="stars" id="klip-stars-org">
-              <svg width="16" height="16"><use href="#star"></use></svg>
-              <span id="klip-stars" class="star-number"></span>
-            </div>
+            <p class="project-desc">Terminal-based password manager with an interactive TUI and an encrypted local database.</p>
           </div>
-          <p class="project-desc">Terminal-based password manager with an interactive TUI and an encrypted local database.</p>
-          <div class="project-source-wrap">
-            <a href="https://github.com/vid4l-07/Klip" target="_blank" rel="noopener noreferrer" class="project-source" aria-label="Klip repository">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
-                <path d="M9 18c-4.51 2-5-2-7-2"/>
-              </svg>
-              Source
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                <polyline points="15 3 21 3 21 9"/>
-                <line x1="10" y1="14" x2="21" y2="3"/>
-              </svg>
-            </a>
-          </div>
-        </div>
+          <a href="https://github.com/vid4l-07/Klip" target="_blank" rel="noopener noreferrer" class="project-source" aria-label="Klip repository">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+              <path d="M9 18c-4.51 2-5-2-7-2"/>
+            </svg>
+            <span>Source</span>
+            <svg class="project-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </article>
 
-        <div class="project-card reveal reveal">
-          <div class="project-title-row">
-            <h3 class="project-title">Aeris</h3>
-          </div>
-          <div class="project-under">
-            <div class="project-tags">
-			  <span class="tag">Bash</span>
-              <span class="tag">Hacking</span>
-              <span class="tag">Wi-Fi</span>
+        <article class="project-row reveal">
+          <div class="project-body">
+            <div class="project-head">
+              <h3 class="project-title">Aeris</h3>
+              <div class="project-tags">
+                <span class="tag">Bash</span>
+                <span class="tag">Hacking</span>
+                <span class="tag">Wi-Fi</span>
+              </div>
             </div>
+            <p class="project-desc">Bash script for Wi-Fi security testing with password auditing and phishing simulation modes.</p>
           </div>
-          <p class="project-desc">Bash script for Wi-Fi security testing with password auditing and phishing simulation modes.</p>
-          <div class="project-source-wrap">
-            <a href="https://github.com/vid4l-07/Aeris" target="_blank" rel="noopener noreferrer" class="project-source" aria-label="Aeris repository">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
-                <path d="M9 18c-4.51 2-5-2-7-2"/>
-              </svg>
-              Source
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                <polyline points="15 3 21 3 21 9"/>
-                <line x1="10" y1="14" x2="21" y2="3"/>
-              </svg>
-            </a>
-          </div>
-        </div>
+          <a href="https://github.com/vid4l-07/Aeris" target="_blank" rel="noopener noreferrer" class="project-source" aria-label="Aeris repository">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+              <path d="M9 18c-4.51 2-5-2-7-2"/>
+            </svg>
+            <span>Source</span>
+            <svg class="project-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </article>
 
-        <div class="project-card reveal reveal-delay-1">
-          <div class="project-title-row">
-            <h3 class="project-title">Linux customization</h3>
-          </div>
-          <div class="project-under">
-            <div class="project-tags">
-              <span class="tag">Linux</span>
-              <span class="tag">Bash</span>
+        <article class="project-row reveal">
+          <div class="project-body">
+            <div class="project-head">
+              <h3 class="project-title">Linux customization</h3>
+              <div class="project-tags">
+                <span class="tag">Linux</span>
+                <span class="tag">Bash</span>
+                <span class="stars" id="hypr-stars-org">
+                  <svg width="14" height="14"><use href="#star"></use></svg>
+                  <span id="hypr-stars" class="star-number"></span>
+                </span>
+              </div>
             </div>
-            <div class="stars" id="hypr-stars-org">
-              <svg width="16" height="16"><use href="#star"></use></svg>
-              <span id="hypr-stars" class="star-number"></span>
-            </div>
+            <p class="project-desc">Linux environment customization using the Hyprland window manager.</p>
           </div>
-          <p class="project-desc">Linux environment customization using the Hyprland window manager.</p>
-          <div class="project-source-wrap">
-            <a href="https://github.com/vid4l-07/dotfiles-hyprland" target="_blank" rel="noopener noreferrer" class="project-source" aria-label="dotfiles-hyprland repository">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
-                <path d="M9 18c-4.51 2-5-2-7-2"/>
-              </svg>
-              Source
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                <polyline points="15 3 21 3 21 9"/>
-                <line x1="10" y1="14" x2="21" y2="3"/>
-              </svg>
-            </a>
-          </div>
-        </div>
+          <a href="https://github.com/vid4l-07/dotfiles-hyprland" target="_blank" rel="noopener noreferrer" class="project-source" aria-label="dotfiles-hyprland repository">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+              <path d="M9 18c-4.51 2-5-2-7-2"/>
+            </svg>
+            <span>Source</span>
+            <svg class="project-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </article>
 
-        <div class="project-card reveal reveal-delay-1">
-          <div class="project-title-row">
-            <h3 class="project-title">Mario Bros</h3>
-          </div>
-          <div class="project-under">
-            <div class="project-tags">
-              <span class="tag">Python</span>
+        <article class="project-row reveal">
+          <div class="project-body">
+            <div class="project-head">
+              <h3 class="project-title">Mario Bros</h3>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+              </div>
             </div>
+            <p class="project-desc">A recreation of Mario Bros Game &amp; Watch, featuring a local multiplayer mode, built using the Pyxel library.</p>
           </div>
-          <p class="project-desc">A recreation of Mario Bros Game & Watch, featuring a local multiplayer mode, built using the Pyxel library.</p>
-          <div class="project-source-wrap">
-            <a href="https://github.com/vid4l-07/Mario-Bros" target="_blank" rel="noopener noreferrer" class="project-source" aria-label="Mario-Bros repository">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
-                <path d="M9 18c-4.51 2-5-2-7-2"/>
-              </svg>
-              Source
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                <polyline points="15 3 21 3 21 9"/>
-                <line x1="10" y1="14" x2="21" y2="3"/>
-              </svg>
-            </a>
-          </div>
-        </div>
+          <a href="https://github.com/vid4l-07/Mario-Bros" target="_blank" rel="noopener noreferrer" class="project-source" aria-label="Mario-Bros repository">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+              <path d="M9 18c-4.51 2-5-2-7-2"/>
+            </svg>
+            <span>Source</span>
+            <svg class="project-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </article>
 
-        <div class="project-card reveal reveal-delay-1">
-          <div class="project-title-row">
-            <h3 class="project-title">Typit</h3>
-          </div>
-          <div class="project-under">
-            <div class="project-tags">
-              <span class="tag">C++</span>
+        <article class="project-row reveal">
+          <div class="project-body">
+            <div class="project-head">
+              <h3 class="project-title">Typit</h3>
+              <div class="project-tags">
+                <span class="tag">C++</span>
+              </div>
             </div>
+            <p class="project-desc">Terminal-based typing tester with English and Spanish support, compatible with Windows, Linux and Mac.</p>
           </div>
-          <p class="project-desc">Terminal-based typing tester with English and Spanish support, compatible with Windows, Linux and Mac.</p>
-          <div class="project-source-wrap">
-            <a href="https://github.com/vid4l-07/Typit" target="_blank" rel="noopener noreferrer" class="project-source" aria-label="Typit repository">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
-                <path d="M9 18c-4.51 2-5-2-7-2"/>
-              </svg>
-              Source
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                <polyline points="15 3 21 3 21 9"/>
-                <line x1="10" y1="14" x2="21" y2="3"/>
-              </svg>
-            </a>
-          </div>
-        </div>
+          <a href="https://github.com/vid4l-07/Typit" target="_blank" rel="noopener noreferrer" class="project-source" aria-label="Typit repository">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+              <path d="M9 18c-4.51 2-5-2-7-2"/>
+            </svg>
+            <span>Source</span>
+            <svg class="project-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </article>
       </div>
     </div>
   </section>
