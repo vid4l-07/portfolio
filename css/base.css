@@ -10,6 +10,7 @@
   --bg: #0a0a0a;
   --surface: #0c0c0c;
   --border: #bbbbbb;
+  --soft-border: rgba(102, 102, 102, 0.3);
   --fg: #cbcbcb;
   --muted: #666666;
   --accent: #cbcbcb;

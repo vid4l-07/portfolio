@@ -86,22 +86,21 @@
   gap: 2.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 1024px) {
-  .skills-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 .skill-group {
-  border: var(--border-width) solid var(--border);
+  border: var(--border-width) solid var(--soft-border);
   padding: 1.5rem;
   background: var(--surface);
+}
+
+.skill-group:hover {
+  border-color: var(--accent);
+  transition: border-color var(--duration-fast) ease-in-out !important;
 }
 
 .skill-group-header {
@@ -112,14 +111,14 @@
 }
 
 .skill-group-dot {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   background: var(--accent);
 }
 
 .skill-group-title {
   font-family: var(--font-mono);
-  font-size: 0.875rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: var(--muted);
@@ -133,19 +132,13 @@
 
 .skill-item {
   font-family: var(--font-mono);
-  font-size: 0.875rem;
-  border-bottom: 1px solid rgba(102, 102, 102, 0.3);
+  font-size: 1rem;
+  border-bottom: 1px solid var(--soft-border);
   padding-bottom: 0.125rem;
   display: inline-block;
   width: fit-content;
   cursor: default;
   transition: color var(--duration-fast), transform var(--duration-fast);
-}
-
-@media (min-width: 768px) {
-  .skill-item {
-    font-size: 1rem;
-  }
 }
 
 .skill-item:hover {
