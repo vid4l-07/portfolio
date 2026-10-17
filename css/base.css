@@ -5,7 +5,7 @@
 }
 
 :root { 
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-sans: "Space Grotesk", system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
   --bg: #0a0a0a;
   --surface: #0c0c0c;
@@ -26,6 +26,8 @@
 
   --duration-fast: 150ms;
   --duration-slow: 0.5s;
+
+  --text-body: clamp(1rem, 0.4vw + 0.95rem, 1.15rem);
 }
 
 .light {
@@ -73,6 +75,7 @@ body {
 
   color: var(--fg);
   font-family: var(--font-sans);
+  font-size: var(--text-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;

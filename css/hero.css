@@ -1,31 +1,21 @@
 /* --- HERO --- */
 .hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  position: relative;
-  padding-top: 6rem;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding-top: 6rem;
 }
 
 .hero-content {
-  width: 100%;
-}
-
-.hero-intro {
-  font-family: var(--font-mono);
-  font-size: 0.875rem;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  margin-bottom: 1rem;
+	width: 100%;
 }
 
 .hero-name {
-  font-size: 3.75rem;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 1.1;
-  text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: -0.03em;
+	line-height: 1.1;
+	text-transform: uppercase;
 }
 
 .hero-name-last {
@@ -33,149 +23,151 @@
 }
 
 .split-line {
+	font-size: clamp(3.25rem, 13vw, 11rem);
 	display: block;
+	line-height: .86;
 }
 
 @media (min-width: 640px) {
-  .hero-name {
-    font-size: 4.5rem;
-  }
+	.hero-name {
+		font-size: 4.5rem;
+	}
 }
 
 @media (min-width: 768px) {
-  .hero-name {
-    font-size: 6rem;
-  }
+	.hero-name {
+		font-size: 6rem;
+	}
 }
 
 @media (min-width: 1024px) {
-  .hero-name {
-    font-size: 8rem;
-  }
+	.hero-name {
+		font-size: 8rem;
+	}
 }
 
 .hero-tagline {
-  margin-top: 1.5rem;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  font-family: var(--font-mono);
-  font-size: 1.125rem;
-  color: var(--muted);
+	margin-top: 1.5rem;
+	height: 2rem;
+	display: flex;
+	align-items: center;
+	font-family: var(--font-mono);
+	font-size: 1.125rem;
+	color: var(--muted);
 }
 
 @media (min-width: 768px) {
-  .hero-tagline {
-    font-size: 1.25rem;
-  }
+	.hero-tagline {
+		font-size: 1.25rem;
+	}
 }
 
 .cursor {
-  width: 3px;
-  height: 1rem;
-  border-right: solid 1px var(--accent);
-  margin-left: 0.25rem;
-  display: inline-block;
-  animation: blink 0.6s step-end infinite;
+	width: 3px;
+	height: 1rem;
+	border-right: solid 1px var(--accent);
+	margin-left: 0.25rem;
+	display: inline-block;
+	animation: blink 0.6s step-end infinite;
 }
 
 .hero-socials-container {
 	display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.5rem;
-    margin-top: clamp(2rem, 6vh, 4rem);
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1.5rem;
+	margin-top: clamp(2rem, 6vh, 4rem);
 }
 
 .hero-socials {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
 }
 
 .social-icon-link {
-  position: relative;
-  width: 3rem;
-  height: 3rem;
-  border: var(--border-width) solid var(--soft-border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--fg);
-  transition: color var(--duration-fast), background-color var(--duration-fast), border-color var(--duration-fast), transform var(--duration-fast);
+	position: relative;
+	width: 3rem;
+	height: 3rem;
+	border: var(--border-width) solid var(--soft-border);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--fg);
+	transition: color var(--duration-fast), background-color var(--duration-fast), border-color var(--duration-fast), transform var(--duration-fast);
 }
 
 .social-icon-link:hover {
-  border-color: var(--primary);
-  background: var(--primary);
-  transform: translateY(-4px);
-  transition: transform var(--duration-fast) cubic-bezier(1,.84,.42,.28);
-  color: var(--bg);
+	border-color: var(--primary);
+	background: var(--primary);
+	transform: translateY(-4px);
+	transition: transform var(--duration-fast) cubic-bezier(1,.84,.42,.28);
+	color: var(--bg);
 }
 
 .social-tip {
 	font-family: var(--font-mono);
 	letter-spacing: 0.18em;
 	opacity: 0;
-    position: absolute;
-    bottom: calc(100% + 0.5rem);
-    left: 50%;
-    translate: -50% 4px;
-    padding: 0.25rem 0.5rem;
-    background: var(--surface);
-    border: 1px solid var(--soft-border);
-    font-size: 0.65rem;
-    white-space: nowrap;
-    pointer-events: none;
-    transition: opacity var(--duration-fast) ease-out, translate var(--duration-fast) ease-out;
+	position: absolute;
+	bottom: calc(100% + 0.5rem);
+	left: 50%;
+	translate: -50% 4px;
+	padding: 0.25rem 0.5rem;
+	background: var(--surface);
+	border: 1px solid var(--soft-border);
+	font-size: 0.65rem;
+	white-space: nowrap;
+	pointer-events: none;
+	transition: opacity var(--duration-fast) ease-out, translate var(--duration-fast) ease-out;
 	text-transform: uppercase;
 }
 
 .social-icon-link:hover .social-tip {
-  opacity: 1;
-  translate: -50% 0;
-  color: var(--fg);
+	opacity: 1;
+	translate: -50% 0;
+	color: var(--fg);
 }
 
 
 .hero-blog-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.625rem;
-  padding: 1rem 1.75rem;
-  border: var(--border-width) solid var(--accent);
-  background: transparent;
-  color: var(--accent);
-  font-family: var(--font-mono);
-  font-size: 0.8125rem;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  transition: background var(--duration-fast), color var(--duration-fast), transform var(--duration-fast);
+	display: inline-flex;
+	align-items: center;
+	gap: 0.625rem;
+	padding: 1rem 1.75rem;
+	border: var(--border-width) solid var(--accent);
+	background: transparent;
+	color: var(--accent);
+	font-family: var(--font-mono);
+	font-size: 0.8125rem;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	transition: background var(--duration-fast), color var(--duration-fast), transform var(--duration-fast);
 }
 
 .hero-blog-btn:hover {
-  background: var(--primary);
-  border-color: var(--primary);
-  color: var(--bg);
-  transform: translateX(6px);
-  animation: hor-bounce var(--duration-slow) ease;
+	background: var(--primary);
+	border-color: var(--primary);
+	color: var(--bg);
+	transform: translateX(6px);
+	animation: hor-bounce var(--duration-slow) ease;
 }
 
 .hero-scroll {
-  margin-top: 4rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
+	margin-top: 4rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-family: var(--font-mono);
+	font-size: 0.75rem;
+	color: var(--muted);
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
 }
 
 .scroll-line {
-  width: 2rem;
-  height: 2px;
-  background: var(--muted);
+	width: 2rem;
+	height: 2px;
+	background: var(--muted);
 }
