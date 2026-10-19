@@ -273,12 +273,12 @@
   gap: 1rem;
   padding: 0.8rem 0;
   border-bottom: var(--border-width) solid var(--muted);
-  transition: border-color var(--duration-fast), transform var(--duration-fast);
 }
 
 .contact-link:hover {
   transform: translateX(6px) !important;
   border-color: var(--accent);
+  transition: border-color var(--duration-fast), transform var(--duration-fast);
 }
 
 .contact-icon-wrap {

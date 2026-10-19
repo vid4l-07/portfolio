@@ -1,7 +1,21 @@
 // --- SPLASH SCREEN ---
 (function() {
   var splash = document.getElementById('splash');
-  if (!splash) return;
+  var done = false;
+
+  function finish() {
+    if (done) return;
+    done = true;
+    document.body.classList.add('is-loaded', 'is-ready');
+    document.body.style.overflow = '';
+    if (splash) splash.classList.add('hidden');
+    document.dispatchEvent(new CustomEvent('splash:done'));
+  }
+
+  if (!splash) {
+    finish();
+    return;
+  }
 
   document.body.style.overflow = 'hidden';
 
@@ -36,12 +50,12 @@
       j++;
       setTimeout(typeOutput, 30 + Math.random() * 20);
     } else {
-      setTimeout(function() {
-        splash.classList.add('hidden');
-        document.body.style.overflow = '';
-      }, 900);
+      setTimeout(finish, 900);
     }
   }
 
   setTimeout(typeCmd, 500);
+
+  // Red de seguridad: nunca dejar la página bloqueada
+  setTimeout(finish, 4000);
 })();

@@ -20,6 +20,14 @@
 		<link rel="stylesheet" href="css/layout.css">
 		<link rel="icon" href="favicon.svg" type="image/svg+xml">
 
+		<noscript>
+			<style>
+				#splash { display: none; }
+				[data-reveal], [data-hero-in] { opacity: 1 !important; translate: none !important; }
+				.split-line { overflow: visible; }
+				.split-inner { translate: none !important; }
+			</style>
+		</noscript>
 
 		<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
 			<symbol id="star" fill="currentColor" viewBox="0 0 16 16">
@@ -152,13 +160,13 @@
 		<section id="home" class="hero">
 			<div class="container hero-content">
 				<h1 class="hero-name">
-					<span class="split-line">Hugo</span>
-					<span class="split-line hero-name-last">Vidal</span>
+					<span class="split-line" data-split-line data-hero-in style="--i: 1">Hugo</span>
+					<span class="split-line hero-name-last" data-split-line data-hero-in style="--i: 2">Vidal</span>
 				</h1>
-				<div class="hero-tagline">
+				<div class="hero-tagline" data-hero-in style="--i: 3">
 					<span id="typewriterText"></span><span class="cursor" id="cursor"></span>
 				</div>
-				<div class="hero-socials-container">
+				<div class="hero-socials-container" data-hero-in style="--i: 4">
 					<a href="https://vid4l-07.github.io/Brain-DB/" target="_blank" rel="noopener noreferrer" class="hero-blog-btn">
 						<svg width="16" height="16"><use href="#book"></use></svg>
 						My Notes & Writeups
@@ -196,18 +204,18 @@
 		<!-- ABOUT -->
 		<section id="about" class="section">
 			<div class="container">
-				<div class="section-header reveal">
-					<h2 class="section-title">About</h2>
+				<div class="section-header" data-reveal>
+					<h2 class="section-title" data-split>About</h2>
 				</div>
 				<div class="about-grid">
 					<div>
-						<p class="about-bio reveal">
+						<p class="about-bio" data-reveal>
 						I am a Computer Engineering student focused on offensive security, Linux and low-level programming. I enjoy understanding how systems work under the hood, building security tools and investigating how software and networks behave.
 						</p>
-						<p class="about-bio reveal" style="margin-top: 1rem;">
+						<p class="about-bio" data-reveal style="--i: 1; margin-top: 1rem;">
 						I'm particularly interested in web and network penetration testing, security tooling and systems programming. I spend my time working on personal projects, practicing in cybersecurity labs and documenting what I learn through technical writeups.
 						</p>
-						<a href="https://vid4l-07.github.io/Brain-DB/" target="_blank" rel="noopener noreferrer" class="about-link reveal reveal-delay-1">
+						<a href="https://vid4l-07.github.io/Brain-DB/" target="_blank" rel="noopener noreferrer" class="about-link" data-reveal style="--i: 2">
 							Check my knowledge
 							<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 								<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
@@ -216,7 +224,7 @@
 							</svg>
 						</a>
 					</div>
-					<div class="reveal reveal-delay-2">
+					<div data-reveal style="--i: 1">
 						<div class="terminal-card">
 							<p class="terminal-prompt">$ whoami</p>
 							<div class="terminal-line">
@@ -247,12 +255,12 @@
 		<!-- PROJECTS -->
 		<section id="projects" class="section">
 			<div class="container">
-				<div class="section-header reveal">
-					<h2 class="section-title">Projects</h2>
+				<div class="section-header" data-reveal>
+					<h2 class="section-title" data-split>Projects</h2>
 				</div>
 				<div class="project-list">
 
-					<article class="project-row reveal">
+					<article class="project-row" data-reveal>
 						<div class="project-body">
 							<div class="project-head">
 								<h3 class="project-title">Roxy</h3>
@@ -271,7 +279,7 @@
 						</a>
 					</article>
 
-					<article class="project-row reveal">
+					<article class="project-row" data-reveal>
 						<div class="project-body">
 							<div class="project-head">
 								<h3 class="project-title">Klip</h3>
@@ -294,7 +302,7 @@
 						</a>
 					</article>
 
-					<article class="project-row reveal">
+					<article class="project-row" data-reveal>
 						<div class="project-body">
 							<div class="project-head">
 								<h3 class="project-title">Aeris</h3>
@@ -313,7 +321,7 @@
 						</a>
 					</article>
 
-					<article class="project-row reveal">
+					<article class="project-row" data-reveal>
 						<div class="project-body">
 							<div class="project-head">
 								<h3 class="project-title">Linux customization</h3>
@@ -335,7 +343,7 @@
 						</a>
 					</article>
 
-					<article class="project-row reveal">
+					<article class="project-row" data-reveal>
 						<div class="project-body">
 							<div class="project-head">
 								<h3 class="project-title">Mario Bros</h3>
@@ -359,7 +367,7 @@
 						</a>
 					</article>
 
-					<article class="project-row reveal">
+					<article class="project-row" data-reveal>
 						<div class="project-body">
 							<div class="project-head">
 								<h3 class="project-title">Typit</h3>
@@ -389,11 +397,11 @@
 		<!-- SKILLS -->
 		<section id="skills" class="section">
 			<div class="container">
-				<div class="section-header reveal">
-					<h2 class="section-title">Skills</h2>
+				<div class="section-header" data-reveal>
+					<h2 class="section-title" data-split>Skills</h2>
 				</div>
 				<div class="skills-grid" id="skillsGrid">
-					<div class="skill-group reveal">
+					<div class="skill-group" data-reveal>
 						<div class="skill-group-header">
 							<div class="skill-group-dot"></div>
 							<h3 class="skill-group-title">Languages</h3>
@@ -406,7 +414,7 @@
 						</div>
 					</div>
 
-					<div class="skill-group reveal reveal-delay-1">
+					<div class="skill-group" data-reveal style="--i: 1">
 						<div class="skill-group-header">
 							<div class="skill-group-dot"></div>
 							<h3 class="skill-group-title">Networking</h3>
@@ -419,7 +427,7 @@
 						</div>
 					</div>
 
-					<div class="skill-group reveal reveal-delay-3">
+					<div class="skill-group" data-reveal style="--i: 2">
 						<div class="skill-group-header">
 							<div class="skill-group-dot"></div>
 							<h3 class="skill-group-title">Linux</h3>
@@ -431,7 +439,7 @@
 						</div>
 					</div>
 
-					<div class="skill-group reveal reveal-delay-4">
+					<div class="skill-group" data-reveal style="--i: 3">
 						<div class="skill-group-header">
 							<div class="skill-group-dot"></div>
 							<h3 class="skill-group-title">Cybersecurity</h3>
@@ -457,8 +465,8 @@
 		<!-- EDUCATION -->
 		<section id="education" class="section">
 			<div class="container">
-				<div class="section-header reveal">
-					<h2 class="section-title">Education</h2>
+				<div class="section-header" data-reveal>
+					<h2 class="section-title" data-split>Education</h2>
 				</div>
 				<div class="education-max">
 					<div class="timeline-item">
@@ -466,7 +474,7 @@
 							<div class="timeline-line-inner" id="timeline1"></div>
 						</div>
 						<div class="timeline-dot"></div>
-						<div class="timeline-content reveal-left">
+						<div class="timeline-content" data-reveal="left">
 							<div class="timeline-header">
 								<div>
 									<h3 class="timeline-institution">UC3M</h3>
@@ -483,7 +491,7 @@
 							<div class="timeline-line-inner" id="timeline2"></div>
 						</div>
 						<div class="timeline-dot"></div>
-						<div class="timeline-content reveal-left reveal-delay-1">
+						<div class="timeline-content" data-reveal="left" style="--i: 1">
 							<div class="timeline-header">
 								<div>
 									<h3 class="timeline-institution">HackMadrid'27</h3>
@@ -501,7 +509,7 @@
 							<div class="timeline-line-inner" id="timeline3"></div>
 						</div>
 						<div class="timeline-dot"></div>
-						<div class="timeline-content reveal-left reveal-delay-2">
+						<div class="timeline-content" data-reveal="left" style="--i: 2">
 							<div class="timeline-header">
 								<div>
 									<h3 class="timeline-institution">TryHackMe</h3>
@@ -527,12 +535,12 @@
 		<!-- CONTACT -->
 		<section id="contact" class="section">
 			<div class="container">
-				<div class="section-header reveal">
-					<h2 class="section-title">Contact</h2>
+				<div class="section-header" data-reveal>
+					<h2 class="section-title" data-split>Contact</h2>
 				</div>
-				<p class="contact-text reveal">If you are interested, contact me by email or through my social media.</p>
+				<p class="contact-text" data-reveal>If you are interested, contact me by email or through my social media.</p>
 				<div class="contact-links">
-					<a href="mailto:h.vidal7@proton.me" class="contact-link reveal">
+					<a href="mailto:h.vidal7@proton.me" class="contact-link" data-reveal>
 						<span class="contact-icon-wrap">
 							<svg class="contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 								<rect width="20" height="16" x="2" y="4" rx="2"/>
@@ -542,7 +550,7 @@
 						<span class="contact-handle">h.vidal7@proton.me</span>
 						<span class="contact-label">Email</span>
 					</a>
-					<a href="https://www.linkedin.com/in/hugo-vidal-18a659350" target="_blank" rel="noopener noreferrer" class="contact-link reveal reveal-delay-1">
+					<a href="https://www.linkedin.com/in/hugo-vidal-18a659350" target="_blank" rel="noopener noreferrer" class="contact-link" data-reveal style="--i: 1">
 						<span class="contact-icon-wrap">
 							<svg class="contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
 								<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
@@ -553,7 +561,7 @@
 						<span class="contact-handle">hugo-vidal</span>
 						<span class="contact-label">LinkedIn</span>
 					</a>
-					<a href="https://github.com/vid4l-07" target="_blank" rel="noopener noreferrer" class="contact-link reveal reveal-delay-2">
+					<a href="https://github.com/vid4l-07" target="_blank" rel="noopener noreferrer" class="contact-link" data-reveal style="--i: 2">
 						<span class="contact-icon-wrap">
 							<svg class="contact-icon" width="18" height="18"><use href="#github"></use></svg>
 						</span>
@@ -588,6 +596,7 @@
 		<script src="js/theme.js"></script>
 		<script src="js/typewriter.js"></script>
 		<script src="js/nav.js"></script>
+		<script src="js/split.js"></script>
 		<script src="js/scroll-effects.js"></script>
 		<script src="js/mose-follow.js"></script>
 		<script src="js/github-stars.js"></script>
