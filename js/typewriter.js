@@ -1,4 +1,5 @@
 // --- TYPEWRITER ---
+// El hero no empieza a escribir hasta que termina el splash.
 (function() {
   var words = [
 	  'Offensive Security', 'Linux Environments', 'Low-Level Development', 'Security Tooling'
@@ -6,12 +7,14 @@
   var wordIndex = 0;
   var charIndex = 0;
   var isDeleting = false;
+  var started = false;
   var textEl = document.getElementById('typewriterText');
   var typeSpeed = 60;
   var deleteSpeed = 30;
   var pauseDuration = 2000;
 
   function tick() {
+    if (!textEl) return;
     var current = words[wordIndex];
     if (!current) return;
 
@@ -35,5 +38,19 @@
     setTimeout(tick, speed);
   }
 
-  tick();
+  function start() {
+    if (started) return;
+    started = true;
+    tick();
+  }
+
+  window.startTypewriter = start;
+  window.typewriterWords = words;
+
+  var splash = document.getElementById('splash');
+  if (!splash || splash.classList.contains('hidden')) {
+    start();
+  } else {
+    document.addEventListener('splash:done', start, { once: true });
+  }
 })();

@@ -166,6 +166,28 @@ body.is-ready [data-hero-in] {
 	translate: 0 0;
 }
 
+/* --- FLIP DEL SPLASH ---
+   `splash-measure` fuerza la geometría final del hero (sin transición) para
+   medir el destino sin triggers de animación. `splash-landed` evita la doble
+   animación del nombre/tagline al revelarse tras el vuelo (las sociales
+   conservan su entrada normal). */
+body.splash-measure [data-hero-in],
+body.splash-measure .hero .split-inner {
+	transition: none !important;
+	opacity: 1 !important;
+	translate: 0 0 !important;
+}
+
+body.splash-landed .hero-name .split-inner,
+body.splash-landed .hero-tagline {
+	transition: none !important;
+}
+
+/* Las sociales/blog arrancan al aterrizar, sin el delay escalonado del hero */
+body.splash-landed [data-hero-in]:not(.split-line) {
+	transition-delay: 0s !important;
+}
+
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
   :root {
