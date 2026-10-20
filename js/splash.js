@@ -1,12 +1,18 @@
 // --- SPLASH SCREEN ---
 (function() {
   var splash = document.getElementById('splash');
+  var splashLoader = document.getElementById('splashLoader');
+  var splashSpinner = document.getElementById('splashSpinner');
   var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  var started = false;
-  var landed = false;
+  var started = false; // el vuelo arrancó
+  var landed = false;  // el hero ya está revelado
   var skipped = false;
   var timers = [];
+
+  var spinFrames = ['\u280b', '\u2819', '\u2839', '\u2838', '\u283c', '\u2834', '\u2826', '\u2827', '\u2807', '\u280f'];
+  var spinIdx = 0;
+  var spinId = null;
 
   function later(fn, ms) {
     var id = setTimeout(fn, ms);
@@ -47,6 +53,23 @@
     window.scrollTo(0, 0);
   }
 
+  function startSpin() {
+    if (!splashSpinner) return;
+    if (spinId) clearInterval(spinId);
+    spinIdx = 0;
+    splashSpinner.textContent = spinFrames[0];
+    spinId = setInterval(function() {
+      spinIdx = (spinIdx + 1) % spinFrames.length;
+      splashSpinner.textContent = spinFrames[spinIdx];
+    }, 80);
+  }
+
+  function stopSpin() {
+    if (spinId) clearInterval(spinId);
+    spinId = null;
+    if (splashLoader) splashLoader.classList.add('hidden');
+  }
+
   function unlockScroll() {
     document.body.style.overflow = '';
     window.removeEventListener('wheel', preventScroll, { passive: false });
@@ -80,6 +103,7 @@
     if (started || landed) return;
     started = true;
     clearTimers();
+    stopSpin();
 
     var nameLines = splash.querySelectorAll('.splash-line');
     var heroLines = document.querySelectorAll('.hero-name .split-line');
@@ -161,7 +185,8 @@
   lockScroll();
 
   requestAnimationFrame(function() {
-    splash.classList.add('is-in');
+    if (splash) splash.classList.add('is-in');
+    startSpin();
   });
 
   later(runFlight, 4600);

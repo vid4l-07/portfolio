@@ -19,6 +19,31 @@
   pointer-events: none;
 }
 
+#splashLoader {
+  position: absolute;
+  top: clamp(0.75rem, 2vw, 1.25rem);
+  left: clamp(0.75rem, 2vw, 1.25rem);
+  font-family: var(--font-mono);
+  color: var(--muted);
+  opacity: 0.95;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10;
+}
+
+#splashLoader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.splash-loader-spinner {
+  display: inline-block;
+  font-size: clamp(0.85rem, 2vw, 1.3rem);
+  line-height: 1;
+  will-change: contents;
+}
+
 #splash *,
 #splash *::before,
 #splash *::after {
