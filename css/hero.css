@@ -65,7 +65,7 @@
 .cursor {
 	width: 3px;
 	height: 1rem;
-	border-right: solid 1px var(--accent);
+	border-right: solid 1px var(--fg);
 	margin-left: 0.25rem;
 	display: inline-block;
 	animation: blink 0.6s step-end infinite;
